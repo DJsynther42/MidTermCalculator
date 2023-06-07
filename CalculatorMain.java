@@ -47,8 +47,12 @@ public class CalculatorMain {
                     System.out.println("Error, please restart the program and enter \"help\" for operation instructions.");
                 }
             } else if (runProgram.equalsIgnoreCase("help")) {
-                helpMethod.assist();
-                calculator.display();
+                    try {
+                    helpMethod.assist();
+                    calculator.display();
+                } catch (Exception e) {
+                    System.out.println("Error, please restart the program and enter \"help\" for operation instructions.");
+                
             }
 
             /**
